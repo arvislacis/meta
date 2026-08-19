@@ -1,6 +1,6 @@
 {
     "_description": "This is the source manifest of changes to Winter CMS for each version. This is used to determine which version of Winter CMS is in use, via the \"winter:version\" Artisan command.",
-    "_created": "2026-08-07T05:47:37+00:00",
+    "_created": "2026-08-19T22:03:07+00:00",
     "manifest": [
         {
             "build": "1.0.420",
@@ -11582,6 +11582,72 @@
                     "\/modules\/backend\/formwidgets\/codeeditor\/assets\/js\/build\/codeeditor.bundle\/919.js",
                     "\/modules\/backend\/formwidgets\/codeeditor\/assets\/js\/build\/codeeditor.bundle\/952.js"
                 ]
+            }
+        },
+        {
+            "build": "1.2.14",
+            "parent": "1.2.13",
+            "modules": {
+                "system": "5efc4f1c641d572d0ac84ff907bb8a4e577f27528426a362ee6c4f2e0dcfb6c1",
+                "backend": "77be082585d5842f721a41235cdf8608dcdca0bf37d173ab8e5ca99883351315",
+                "cms": "027d8d4b07dd065f6c48cb46961f69feb79da5d5fab0f54d948c32eabfd3f4ae"
+            },
+            "files": {
+                "added": {
+                    "\/modules\/system\/database\/migrations\/2026_08_09_000032_Db_System_Request_Logs_Indexes.php": "8f0be9d9b29e6559de660efd522d6a3161a654b3addeaeff2cdddd7bb9e91b5e",
+                    "\/modules\/system\/tests\/models\/RequestLogTest.php": "b3530340677a87d9b58f6659b1be1db1d24b741f238ec5cc07ead4d555e546b2",
+                    "\/modules\/backend\/assets\/less\/controls\/record-navigation.less": "b27fae8c7e10408f8191661554ea30053cc3e03cfccc271280ba77ba4dd24aca",
+                    "\/modules\/backend\/behaviors\/formcontroller\/partials\/_record_navigation.php": "3ddb0208b13d438fcb2aa987901547daf1e5073abfdd48817fd74684efa198f1",
+                    "\/modules\/backend\/formwidgets\/FieldSet.php": "7ce1ffb3ae4eeef217c6f92f32eb84670212668edaa22c3a864f996c1a98e31e",
+                    "\/modules\/backend\/formwidgets\/fieldset\/assets\/css\/fieldset.css": "ee32829ccba1c52b58a7106f4f7c5148f76689ebf650a61e7f88e787a6fe7b41",
+                    "\/modules\/backend\/formwidgets\/fieldset\/assets\/less\/fieldset.less": "97fb93a4e100794d263ffb1dcdf6aa12ed1a4d153ecb619890b229ca8e07473d",
+                    "\/modules\/backend\/formwidgets\/fieldset\/partials\/_fieldset.php": "d5e78a4e318cf2e575ecf52d002562c4af245824a6eef7819c75f235c908b0fb",
+                    "\/modules\/backend\/tests\/behaviors\/FormControllerRecordNavigationTest.php": "1bbe986188a488dd50b2bb32a2e93a37bab67b19743315455f9a6c9c3665e451",
+                    "\/modules\/backend\/tests\/behaviors\/ImportExportControllerPermissionsTest.php": "a66e6ea281c08badc7d74192cb5d7c298ff4852b32d71c88caa9359b47be1029",
+                    "\/modules\/backend\/tests\/classes\/HandlerDispatchSecurityTest.php": "42a45f0ac752ef9e2ab074a5b8b8559c85363e2cb8b51d86f1646c7830e55097",
+                    "\/modules\/backend\/tests\/controllers\/AuthResetTest.php": "12c0c6050b27457edacc70a6f78685e0b48bcab745b468b876885580e6f672fa",
+                    "\/modules\/backend\/tests\/controllers\/MyAccountSecurityTest.php": "db149bde01297fd8633619d10d845714f0f2080e008ac57c443fae018069c723",
+                    "\/modules\/backend\/tests\/widgets\/FormFieldSetSaveTest.php": "e3a799dc7da0d3fbd452da4bfbf9dc58d1fcb4f2908ff644088264803ea63248",
+                    "\/modules\/backend\/tests\/widgets\/ListColumnEscapingTest.php": "4d7202ac7d914dcba2b4cae525708b22f554e9b1ac2accad1640123a28cf856e",
+                    "\/modules\/backend\/tests\/widgets\/TableSearchEscapingTest.php": "abb1c29070c23bea0792fc7712da43160a620c88834a2e513198271873fb625a",
+                    "\/modules\/cms\/database\/migrations\/2026_08_09_000004_Db_Cms_Theme_Templates_Indexes.php": "4c059c6a86a46d8099cdabe3626a5141ec07aab6cf1398c01cdff7324cf6b06d",
+                    "\/modules\/cms\/tests\/fixtures\/themes\/themedata\/theme.yaml": "6b5ea58e6bbc7edb27d1d4fe305409c68a0da5ad96a84056bab1756cce503d1f",
+                    "\/modules\/cms\/tests\/models\/ThemeDataTest.php": "d7243010f1b20af775ce48365271122ce605e4230bd44060c1464b469f6f2d4c"
+                },
+                "modified": {
+                    "\/modules\/system\/lang\/en\/lang.php": "df6ca90a4372d2c79dd2eda9f507f1755cfb4ad06623e34197f9f30a1785b7e4",
+                    "\/modules\/system\/lang\/uk\/lang.php": "a434159e624c52c603e7a7182e2df3844aa78a6eb7b17d7a25d7c51193bbbabe",
+                    "\/modules\/backend\/ServiceProvider.php": "aec1bb4f0a27af66cae536580688dace5f829896e823693532970c8f3af1adc1",
+                    "\/modules\/backend\/assets\/css\/winter.css": "3ec2afe207832f20858c22c753a4f23d667c12506d54781d95c62b0cbb58a264",
+                    "\/modules\/backend\/assets\/less\/winter.less": "6ac07f8d800ae84c2ca9980821f30429225c0c55deb5fefac8fe313daa2b1ef5",
+                    "\/modules\/backend\/behaviors\/FormController.php": "ce49bfd2fe4a72ecf7567ed209384dfc2d0e7efba1f58b4e51d2eac7eea249b8",
+                    "\/modules\/backend\/behaviors\/ImportExportController.php": "0975ff452ad5e308e62d07647349697f7e8020ecfe9bab172c6c96aadfbf484b",
+                    "\/modules\/backend\/behaviors\/formcontroller\/views\/preview\/_fancy.php": "5edfdd0832859287680881721dcaf2ee612ea738434116c29fca4bbca271dda9",
+                    "\/modules\/backend\/behaviors\/formcontroller\/views\/preview\/_sidebar.php": "d69c30c21f1eec620645aa18490a3d61e10937008e1decba12b13c5e2dba9177",
+                    "\/modules\/backend\/behaviors\/formcontroller\/views\/preview\/_standard.php": "13b15fdada0d2b8d85b399151147df1e87ad77e3a5640a359775d41d43d2ef30",
+                    "\/modules\/backend\/behaviors\/formcontroller\/views\/update\/_fancy.php": "d99ab3dfa7be47b97fa39d982cea47c9a2a6f168f3a05062f9b14193ac7640ca",
+                    "\/modules\/backend\/behaviors\/formcontroller\/views\/update\/_sidebar.php": "bab7182984a8bdd419a2fb114842a8eee924f37ce96ba8ccca3471a6483cb4f0",
+                    "\/modules\/backend\/behaviors\/formcontroller\/views\/update\/_standard.php": "b6f7e926e544ecf07731fbc3b6dc6fe92a94d48a01824ec5783115d0958141b7",
+                    "\/modules\/backend\/classes\/BackendController.php": "57ebba2be529edfbaedd2fa23187ba29cd7f2a467edf93a28baaa0ec94f16f90",
+                    "\/modules\/backend\/classes\/Controller.php": "a58b891e0906f6447560829fcc65c95ba004cbeb826bb0d1de0f2ff6144c3a7f",
+                    "\/modules\/backend\/controllers\/Auth.php": "ccba7b123fadb125ccd75f9a9901b99337427a6d676ef41449bc9d94aacd667f",
+                    "\/modules\/backend\/controllers\/MyAccount.php": "8f56dfdc12328f95d8b453e67ad037092a6e9c77aea10a7e3656467a2f615f87",
+                    "\/modules\/backend\/lang\/en\/lang.php": "63723c4fd18f03a23524f3231e29d23c1e19ed6876144fd2c6c4ea6624601771",
+                    "\/modules\/backend\/models\/BrandSetting.php": "db6f3ee6d727e430b749e97ff82fe6a6659a69e7215ad96e8ef498aeefeebd4f",
+                    "\/modules\/backend\/models\/EditorSetting.php": "daf537f14b036a34f03742d31c4bb8b8e9cb004c9b8d047866da393506c21adc",
+                    "\/modules\/backend\/tests\/classes\/AuthManagerTest.php": "63ff34221abe7d5a491dcfc2732a05b5a704f6f58269883abfdc443bf6fd7bc2",
+                    "\/modules\/backend\/tests\/models\/BrandSettingTest.php": "7f40df59bea4456450812cdd34917b2b4f0279d831ba39a086cc28c8bdc427fe",
+                    "\/modules\/backend\/tests\/models\/EditorSettingTest.php": "d7e64aa4ef7b0163c078d1b2132895b28e6c347804f7346b7d10f844772efa82",
+                    "\/modules\/backend\/widgets\/Form.php": "0dc5ca8bea0c066df5286bb0b730ab930b414ca0cfade926939135caf347b0e8",
+                    "\/modules\/backend\/widgets\/Lists.php": "3ca1bd4e7bdd8b330f16c338d2aadca008145a94d3d28adbd02f618557e38205",
+                    "\/modules\/backend\/widgets\/table\/partials\/_table.php": "163ee0a5871d48571e0faa1a23cc3a228cdca01da8e437931c38c721d393a643",
+                    "\/modules\/cms\/classes\/AutoDatasource.php": "d879cdc798a20d7c2c5761b6c241b5311d7938b5042ef6dbbd8911e9f35b1f8f",
+                    "\/modules\/cms\/classes\/Theme.php": "d1f6a4b7e769b665fb0fcafb8363290d16ade385347bbd0ee4b344f900e2f6b3",
+                    "\/modules\/cms\/lang\/uk\/lang.php": "80fff81aaff2f4996685f9da66e940670a96bb1ed97a7cadb1793adf95ff3405",
+                    "\/modules\/cms\/models\/ThemeData.php": "82acda41b77835c046ba2f5fe19fcbc258951159534ae22412e0e310b8e6fc6f",
+                    "\/modules\/cms\/tests\/classes\/AutoDatasourceTest.php": "a4a180e28585487b99333a7b8530afc22a7bd1b131ec6066d5c67bfeec4b5dc2",
+                    "\/modules\/cms\/tests\/classes\/ThemeTest.php": "28b0e5a9798b9009ae03b232c80933d6733eef49d49e39fd626b12afec8eff73"
+                }
             }
         }
     ]
